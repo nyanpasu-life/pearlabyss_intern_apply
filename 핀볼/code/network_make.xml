@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/text_ip"
+        android:layout_width="308dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="아이피"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/server_make" />
+
+    <Button
+        android:id="@+id/server_excess"
+        android:layout_width="119dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="16dp"
+        android:onClick="excessServer"
+        android:text="서버 접속"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_ip" />
+
+    <Button
+        android:id="@+id/server_make"
+        android:layout_width="189dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="44dp"
+        android:onClick="makeServer"
+        android:text="서버 생성"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/conn_wait_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginBottom="12dp"
+        android:text="소켓 연결 대기중"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/server_make"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/net_game_start"
+        android:layout_width="159dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="96dp"
+        android:onClick="net_char_select"
+        android:text="게임 시작"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/server_make" />
+
+    <Button
+        android:id="@+id/check_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_marginTop="12dp"
+        android:onClick="check_ip"
+        android:text="가상 ip 주소 확인"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/server_make" />
+
+</android.support.constraint.ConstraintLayout>

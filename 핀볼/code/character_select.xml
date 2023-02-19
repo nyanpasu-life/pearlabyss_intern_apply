@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCharacterClicked"
+            android:text="one" />
+
+        <Button
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCharacterClicked"
+            android:text="two" />
+
+        <Button
+            android:id="@+id/three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCharacterClicked"
+            android:text="three" />
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCharacterClicked"
+            android:text="four" />
+
+        <Button
+            android:id="@+id/game_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="game_start"
+            android:text="GameStart" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
